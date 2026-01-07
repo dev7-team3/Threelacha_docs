@@ -4,18 +4,28 @@
 
 ## 📚 문서 구조
 
+### 📄 보고서
+프로젝트 진행 과정의 보고서 문서
+
+- [프로젝트 기획서](./보고서/프로젝트_기획서.md) : 프로젝트의 기획 문서
+- [중간 현황](./보고서/중간_현황.md) : 멘토님과의 중간 현황 발표
+- [프로젝트 최종보고서](./보고서/프로젝트_최종보고서.md) : 프로젝트 최종 결과 보고서
+- [대시보드 시연](./보고서/대시보드_시연.md) : Streamlit 대시보드 시연 자료
+
 ### 📘 ADR (Architecture Decision Records)
 아키텍처 결정 기록 문서 모음
 
 | 번호 | 제목 | 설명 |
 | --- | --- | --- |
 | ADR-001 | [프로덕션 DB 사용여부 판단](./ADR/adr-001-production-db-use-status.md) | Athena 쿼리엔진으로 S3 단일저장소 유지 결정 |
+| ADR-002 | [데이터 수집 파이프라인 아키텍처 결정](./ADR/adr-002-data-ingestion-pipeline.md) | EC2 + Docker + Airflow 채택 |
+| ADR-003 | [Airflow Executor 선택](./ADR/adr-003-airflow-executor.md) | Celery Executor 채택 |
 
-### 📄 보고서
-프로젝트 진행 과정의 보고서 문서
 
-- [프로젝트 기획서](./보고서/프로젝트_기획서.md) : 프로젝트의 기획 문서
-- [중간 현황](./보고서/중간_현황.md) : 멘토님과의 중간 현황 발표
+### 🔧 Troubleshooting
+프로젝트 진행 중 발생한 문제 해결 과정
+
+- [t3.medium 환경에서의 Airflow 운영 안정화](./troubleshooting/t3_medium환경에서의%20airflow.md) : EC2 t3.medium 환경에서의 Airflow 운영 안정화 및 리소스 최적화 전략
 
 ## 🔗 관련 링크
 
