@@ -20,6 +20,7 @@
 | ADR-001 | [프로덕션 DB 사용여부 판단](./ADR/adr-001-production-db-use-status.md) | Athena 쿼리엔진으로 S3 단일저장소 유지 결정 |
 | ADR-002 | [데이터 수집 파이프라인 아키텍처 결정](./ADR/adr-002-data-ingestion-pipeline.md) | EC2 + Docker + Airflow 채택 |
 | ADR-003 | [Airflow Executor 선택](./ADR/adr-003-airflow-executor.md) | Celery Executor 채택 |
+| ADR-004 | [RDS 도입 결정](./ADR/adr-004-rds-adoption-for-dashboard-performance.md) | 대시보드 조회 성능 개선을 위한 RDS 도입 |
 
 
 ### 🔧 Troubleshooting

@@ -17,9 +17,10 @@
 
 | 번호      | 제목                                                                                  | 상태            | 요약                   |
 | ------- | ----------------------------------------------------------------------------------- | ------------- | -------------------- |
-| ADR-001 | [프로덕션 DB 사용여부 판단](./adr-001-production-db-use-status.md)                   | ✅ Accepted    | Athena 쿼리엔진으로 S3 단일저장소 유지 결정 |
+| ADR-001 | [프로덕션 DB 사용여부 판단](./adr-001-production-db-use-status.md)                   | 🔁 Superseded   | Athena 쿼리엔진으로 S3 단일저장소 유지 결정 |
 | ADR-002 | [데이터 수집 파이프라인 아키텍처 결정](./adr-002-data-ingestion-pipeline.md)         | ✅ Accepted    | EC2 + Docker + Airflow 채택 |
 | ADR-003 | [Airflow Executor 선택](./adr-003-airflow-executor.md)                               | ✅ Accepted    | Celery Executor 채택 |
+| ADR-004 | [RDS 도입 결정](./adr-004-rds-adoption-for-dashboard-performance.md)               | ✅ Accepted    | 대시보드 조회 성능 개선을 위한 RDS 도입 |
 
 > 새로운 ADR을 작성하면 이 표에도 추가해주세요. (상태 이모지는 변경 가능)
 
@@ -30,6 +31,7 @@
   ├──adr-001-production-db-use-status.md
   ├──adr-002-data-ingestion-pipeline.md
   ├──adr-003-airflow-executor.md
+  ├──adr-004-rds-adoption-for-dashboard-performance.md
   ├── README.md
 
 #### 🧱 파일 작명 규칙
