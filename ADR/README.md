@@ -17,19 +17,19 @@
 
 | 번호      | 제목                                                                                  | 상태            | 요약                   |
 | ------- | ----------------------------------------------------------------------------------- | ------------- | -------------------- |
-| ADR-001 | [Deprecate cron in favor of scheduler](./adr-001-deprecate-cron.md)                 | 🔁 Superseded | cron 대신 Airflow로 전환  |
-| ADR-002 | [Use Airflow for DAG orchestration](./adr-002-use-airflow-for-dag-orchestration.md) | ✅ Accepted    | 워크플로우 도구로 Airflow 채택 |
-| ADR-003 | [Adopt batch processing for ETL](./adr-003-adopt-batch-processing.md)               | 🟡 Proposed   | 배치 기반 파이프라인 선택       |
+| ADR-001 | [프로덕션 DB 사용여부 판단](./adr-001-production-db-use-status.md)                   | ✅ Accepted    | Athena 쿼리엔진으로 S3 단일저장소 유지 결정 |
+| ADR-002 | [데이터 수집 파이프라인 아키텍처 결정](./adr-002-data-ingestion-pipeline.md)         | ✅ Accepted    | EC2 + Docker + Airflow 채택 |
+| ADR-003 | [Airflow Executor 선택](./adr-003-airflow-executor.md)                               | ✅ Accepted    | Celery Executor 채택 |
 
 > 새로운 ADR을 작성하면 이 표에도 추가해주세요. (상태 이모지는 변경 가능)
 
 #### 📁 디렉토리 구조
 
 ```
-/adr
-  ├──adr-001-deprecate-cron.md
-  ├──adr-002-use-airflow-for-dag-orchestration.md
-  ├──adr-003-adopt-batch-processing.md
+/ADR
+  ├──adr-001-production-db-use-status.md
+  ├──adr-002-data-ingestion-pipeline.md
+  ├──adr-003-airflow-executor.md
   ├── README.md
 
 #### 🧱 파일 작명 규칙
